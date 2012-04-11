@@ -12,7 +12,6 @@ class Avrdude < Formula
   end
 
   def install
-    system "cd avrdude"
     system "./bootstrap"
     system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make"
