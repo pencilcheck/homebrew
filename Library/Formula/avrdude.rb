@@ -1,7 +1,7 @@
 require 'formula'
 
 class Avrdude < Formula
-  head 'http://svn.savannah.nongnu.org/svn/avrdude/trunk/avrdude'
+  head 'http://svn.savannah.nongnu.org/svn/avrdude/trunk/avrdude', :using => :svn
   homepage 'http://savannah.nongnu.org/projects/avrdude/'
 
   depends_on 'libusb-compat' if ARGV.include? '--with-usb'
